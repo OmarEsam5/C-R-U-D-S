@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUDS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>CRUDS</h2>
+            <p>create reade update delete search</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="price-total">
+                <input oninput="totalAll()" type="text" placeholder="price" id="price">
+                <input oninput="totalAll()" type="text" placeholder="taxes" id="taxes">
+                <input oninput="totalAll()" type="text" placeholder="ads" id="ads">
+                <input oninput="totalAll()" type="text" placeholder="discount" id="discount">
+                <div id="total"></div>
+            </div>
+            <input type="number" placeholder="count max => 25 Ele" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="create">Create</button>
+            <input type="text" placeholder="search" id="search">
+            <div class="search">
+                <button id="search-title">Search By Title</button>
+                <button id="search-category">Search By Category</button>
+            </div>
+        </div>
+        <div class="outputs">
+            <div class="delet-all">
+                <button id="delete-all"></button>
+            </div>
+            <table>
+                <thead>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <button class="scroll-top" style="display: none;"></button>
+    <script src="script.js"></script>
+</body>
+</html>
